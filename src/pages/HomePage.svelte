@@ -4,9 +4,10 @@
   interface Props {
     onModeSelect: (mode: GameMode) => void;
     onShowScoreboard: () => void;
+    onShowSettings: () => void;
   }
 
-  let { onModeSelect, onShowScoreboard }: Props = $props();
+  let { onModeSelect, onShowScoreboard, onShowSettings }: Props = $props();
 </script>
 
 <div class="home-page">
@@ -35,9 +36,14 @@
     </div>
   </div>
 
-  <button class="scoreboard-btn" onclick={onShowScoreboard}>
-    View Scoreboard
-  </button>
+  <div class="bottom-buttons">
+    <button class="scoreboard-btn" onclick={onShowScoreboard}>
+      View Scoreboard
+    </button>
+    <button class="settings-btn" onclick={onShowSettings}>
+      ⚙️ Settings
+    </button>
+  </div>
 </div>
 
 <style>
@@ -94,7 +100,13 @@
     margin-bottom: 1rem;
   }
 
-  .scoreboard-btn {
+  .bottom-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .scoreboard-btn, .settings-btn {
+    flex: 1;
     padding: 1rem 2rem;
     border: 1px solid #888;
     border-radius: 8px;
@@ -102,7 +114,7 @@
     cursor: pointer;
   }
 
-  .scoreboard-btn:hover {
+  .scoreboard-btn:hover, .settings-btn:hover {
     background: #888;
   }
 </style>

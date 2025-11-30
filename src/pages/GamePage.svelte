@@ -4,6 +4,7 @@
   import QuizSummary from '../components/QuizSummary.svelte';
   import { quizService, type GameSettings, type Question } from '../services/QuizService';
   import { scoreService } from '../services/ScoreService';
+  import { aiService } from '../services/AiService';
 
   interface Props {
     settings: GameSettings;
@@ -53,7 +54,7 @@
 
   let currentTimeLimit = $derived(getQuestionTimeLimit(currentQuestion));
 
-  function handleAnswer(answer: string | string[]) {
+  async function handleAnswer(answer: string | string[]) {
     let isCorrect = false;
     
     if (Array.isArray(answer)) {
@@ -64,7 +65,28 @@
       ).length;
       isCorrect = correctCount >= requiredCount;
     } else {
-      isCorrect = quizService.checkAnswer(answer, currentQuestion.correctAnswers);
+      // Use AI validation for ai-agent type questions
+      if (currentQuestion.type === 'ai-agent') {
+        try {
+          isCorrect = await aiService.checkAnswer(
+            currentQuestion.question,
+            answer,
+            currentQuestion.correctAnswers
+          );
+        } catch (error) {
+          console.error('AI validation error:', error);
+          feedback = {
+            correct: false,
+            message: 'Error validating answer. Please check your API key.'
+          };
+          setTimeout(() => {
+            feedback = null;
+          }, 3000);
+          return;
+        }
+      } else {
+        isCorrect = quizService.checkAnswer(answer, currentQuestion.correctAnswers);
+      }
     }
 
     // Store question in history

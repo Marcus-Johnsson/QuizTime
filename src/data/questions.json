@@ -29,7 +29,7 @@
       "experienceLevel": 2,
       "question": "What are some of the upsides of the integration test?",
       "correctAnswers": ["Written by the same team, can be hosted locally. Can debug to identify bugs.", "Catches integration issues early", "Tests real-world scenarios"],
-      "type": "multiple",
+      "type": "ai-agent",
       "tags": ["DevOps", "Testing", "Backend"]
     },
     {

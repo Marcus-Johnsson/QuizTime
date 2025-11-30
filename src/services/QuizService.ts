@@ -41,11 +41,6 @@ class QuizService {
   getRandomQuestion(experienceLevel?: ExperienceLevel, tags?: string[], excludeIds?: number[]): Question {
     let availableQuestions = this.questions;
     
-    // Filter out ai-agent questions (not supported yet)
-    availableQuestions = availableQuestions.filter(
-      (q) => q.type !== 'ai-agent'
-    );
-
     // Filter by experience level if specified
     if (experienceLevel) {
       availableQuestions = availableQuestions.filter(

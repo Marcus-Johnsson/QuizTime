@@ -2,11 +2,12 @@
   import HomePage from './pages/HomePage.svelte';
   import GamePage from './pages/GamePage.svelte';
   import ScoreboardPage from './pages/ScoreboardPage.svelte';
+  import SettingsPage from './pages/SettingsPage.svelte';
   import ExperienceSelector from './components/ExperienceSelector.svelte';
   import TagSelector from './components/TagSelector.svelte';
   import type { GameMode, GameSettings, ExperienceLevel } from './services/QuizService';
 
-  type Page = 'home' | 'experience' | 'tags' | 'game' | 'scoreboard';
+  type Page = 'home' | 'experience' | 'tags' | 'game' | 'scoreboard' | 'settings';
 
   let currentPage = $state<Page>('home');
   let gameSettings = $state<GameSettings | null>(null);
@@ -48,6 +49,10 @@
     currentPage = 'scoreboard';
   }
 
+  function handleShowSettings() {
+    currentPage = 'settings';
+  }
+
   function handleBackToHome() {
     currentPage = 'home';
     gameSettings = null;
@@ -62,7 +67,7 @@
 
 <main>
   {#if currentPage === 'home'}
-    <HomePage onModeSelect={handleModeSelect} onShowScoreboard={handleShowScoreboard} />
+    <HomePage onModeSelect={handleModeSelect} onShowScoreboard={handleShowScoreboard} onShowSettings={handleShowSettings} />
   {:else if currentPage === 'experience'}
     <ExperienceSelector onSelect={handleExperienceSelect} onBack={handleBackToHome} />
   {:else if currentPage === 'tags'}
@@ -71,5 +76,7 @@
     <GamePage settings={gameSettings} onExit={handleBackToHome} />
   {:else if currentPage === 'scoreboard'}
     <ScoreboardPage onBack={handleBackToHome} />
+  {:else if currentPage === 'settings'}
+    <SettingsPage onBack={handleBackToHome} />
   {/if}
 </main>
