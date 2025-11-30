@@ -1,0 +1,604 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "experienceLevel": 1,
+      "question": "What are unit tests?",
+      "correctAnswers": ["Test functions outcomes", "Tests that verify individual units of code"],
+      "type": "ai-agent",
+      "tags": ["DevOps", "Testing", "Backend"]
+    },
+    {
+      "id": 2,
+      "experienceLevel": 1,
+      "question": "What is Integration testing?",
+      "correctAnswers": ["Test the interaction of different units", "Testing how different components work together"],
+      "type": "ai-agent",
+      "tags": ["DevOps", "Testing", "Backend"]
+    },
+    {
+      "id": 3,
+      "experienceLevel": 2,
+      "question": "What are some of the downsides with integration test?",
+      "correctAnswers": ["More code to write, takes time and money. usually specific team works with integration test.", "Slower than unit tests", "More complex to maintain"],
+      "type": "multiple",
+      "tags": ["DevOps", "Testing", "Backend"]
+    },
+    {
+      "id": 4,
+      "experienceLevel": 2,
+      "question": "What are some of the upsides of the integration test?",
+      "correctAnswers": ["Written by the same team, can be hosted locally. Can debug to identify bugs.", "Catches integration issues early", "Tests real-world scenarios"],
+      "type": "multiple",
+      "tags": ["DevOps", "Testing", "Backend"]
+    },
+    {
+      "id": 5,
+      "experienceLevel": 2,
+      "question": "How does integration test work?",
+      "correctAnswers": ["It creates a new test-project (xUnit) and once it's done it deletes the project.", "Spins up test environment and tears it down after"],
+      "type": "ai-agent",
+      "tags": ["DevOps", "Testing", ".NET", "Backend"]
+    },
+    {
+      "id": 6,
+      "experienceLevel": 1,
+      "question": "What does Devops stand for?",
+      "correctAnswers": ["Development (Dev) and operations (Ops)", "Development and Operations"],
+      "type": "regex",
+      "tags": ["DevOps"]
+    },
+    {
+      "id": 7,
+      "experienceLevel": 1,
+      "question": "How do you print out in the terminal with C#?",
+      "correctAnswers": ["Console.WriteLine();", "Console.Write();"],
+      "type": "multiple",
+      "tags": ["C#", ".NET", "Backend"]
+    },
+    {
+      "id": 8,
+      "experienceLevel": 1,
+      "question": "What can an int store?",
+      "correctAnswers": ["numbers", "integers", "whole numbers", "number"],
+      "type": "regex",
+      "tags": ["C#", ".NET", "Backend"]
+    },
+    {
+      "id": 9,
+      "experienceLevel": 1,
+      "question": "Can an int store negative values?",
+      "correctAnswers": ["Yes", "true"],
+      "type": "regex",
+      "tags": ["C#", ".NET", "Backend"]
+    },
+    {
+      "id": 10,
+      "experienceLevel": 2,
+      "question": "How can you change it so that it only stores positive zero and up?",
+      "correctAnswers": ["uint", "unsigned int"],
+      "type": "regex",
+      "tags": ["C#", ".NET", "Backend"]
+    },
+    {
+      "id": 11,
+      "experienceLevel": 1,
+      "question": "What does a string store?",
+      "correctAnswers": ["Stores a sequence of characters, surrounded by double quotes", "text", "characters"],
+      "type": "ai-agent",
+      "tags": ["C#", ".NET", "Backend"]
+    },
+    {
+      "id": 12,
+      "experienceLevel": 1,
+      "question": "Can a string store numbers?",
+      "correctAnswers": ["true", "yes"],
+      "type": "regex",
+      "tags": ["C#", ".NET", "Backend"]
+    },
+    {
+      "id": 13,
+      "experienceLevel": 1,
+      "question": "Can a string handle math?",
+      "correctAnswers": ["false", "no"],
+      "type": "regex",
+      "tags": ["C#", ".NET", "Backend"]
+    },
+    {
+      "id": 14,
+      "experienceLevel": 1,
+      "question": "What does CLI stand for?",
+      "correctAnswers": ["Command Line Interface"],
+      "type": "regex",
+      "tags": ["CLI", "Backend"]
+    },
+    {
+      "id": 15,
+      "experienceLevel": 1,
+      "question": "What's the difference between GUI and CLI?",
+      "correctAnswers": ["GUI uses graphical interface with mouse, CLI uses text commands", "GUI is visual, CLI is text-based", "GUI has buttons and windows, CLI uses command input"],
+      "type": "ai-agent",
+      "tags": ["CLI", "Backend"]
+    },
+    {
+      "id": 16,
+      "experienceLevel": 1,
+      "question": "Write two CLI shells",
+      "correctAnswers": ["PowerShell", "Bash", "Zsh", "Command Prompt", "Fish"],
+      "type": "multiple",
+      "tags": ["CLI", "Backend"]
+    },
+    {
+      "id": 17,
+      "experienceLevel": 1,
+      "question": "Write a terminal-emulator",
+      "correctAnswers": ["Windows Terminal", "iTerm2", "Warp", "Alacritty", "GNOME Terminal", "Konsole", "Hyper"],
+      "type": "regex",
+      "tags": ["CLI", "Backend"]
+    },
+    {
+      "id": 18,
+      "experienceLevel": 2,
+      "question": "What are some of CLI functions?",
+      "correctAnswers": ["command prompt, Scripting, Environment Variables, File management, process management", "scripting", "file management", "process management"],
+      "type": "multiple",
+      "tags": ["CLI", "Backend"]
+    },
+    {
+      "id": 19,
+      "experienceLevel": 1,
+      "question": "How does one change directory location in CLI?",
+      "correctAnswers": ["cd", "CD"],
+      "type": "regex",
+      "tags": ["CLI", "Backend"]
+    },
+    {
+      "id": 20,
+      "experienceLevel": 1,
+      "question": "How does one access git commands in CLI?",
+      "correctAnswers": ["git", "type git followed by command"],
+      "type": "regex",
+      "tags": ["Git", "CLI", "DevOps"]
+    },
+    {
+      "id": 21,
+      "experienceLevel": 1,
+      "question": "What kind of shell does Windows operating system use?",
+      "correctAnswers": ["PowerShell", "Command Prompt", "cmd"],
+      "type": "regex",
+      "tags": ["CLI", "Backend"]
+    },
+    {
+      "id": 22,
+      "experienceLevel": 1,
+      "question": "What kind of shell does Linux operating system use?",
+      "correctAnswers": ["Bash", "Bash Shell", "BashShell"],
+      "type": "regex",
+      "tags": ["CLI", "Backend"]
+    },
+    {
+      "id": 23,
+      "experienceLevel": 2,
+      "question": "What does kernel do for software?",
+      "correctAnswers": ["Memory management, process scheduling, security, authentication, handling hardware input and output", "manages memory and processes", "handles hardware communication"],
+      "type": "multiple",
+      "tags": ["Backend", "Operating Systems"]
+    },
+    {
+      "id": 24,
+      "experienceLevel": 1,
+      "question": "What are some actions for dotnet?",
+      "correctAnswers": ["dotnet new", "dotnet build", "dotnet restore", "dotnet test", "dotnet run", "dotnet publish"],
+      "type": "multiple",
+      "tags": [".NET", "CLI", "Backend"]
+    },
+    {
+      "id": 25,
+      "experienceLevel": 1,
+      "question": "What are some actions for git?",
+      "correctAnswers": ["git status", "git push", "git pull", "git checkout", "git commit", "git add", "git branch"],
+      "type": "multiple",
+      "tags": ["Git", "CLI", "DevOps"]
+    },
+    {
+      "id": 26,
+      "experienceLevel": 1,
+      "question": "Does each git commit get a unique ID?",
+      "correctAnswers": ["true", "yes"],
+      "type": "regex",
+      "tags": ["Git", "DevOps"]
+    },
+    {
+      "id": 27,
+      "experienceLevel": 2,
+      "question": "What does merge conflict mean?",
+      "correctAnswers": ["same lines of code have been changed differently in the branches being merged", "when two branches modify the same lines differently", "conflicting changes in the same file"],
+      "type": "ai-agent",
+      "tags": ["Git", "DevOps"]
+    },
+    {
+      "id": 28,
+      "experienceLevel": 1,
+      "question": "What does CI mean in CI/CD?",
+      "correctAnswers": ["Continuous Integration"],
+      "type": "regex",
+      "tags": ["CI/CD", "DevOps"]
+    },
+    {
+      "id": 29,
+      "experienceLevel": 1,
+      "question": "What does CD mean in CI/CD?",
+      "correctAnswers": ["Continuous Delivery", "Continuous Deployment"],
+      "type": "multiple",
+      "tags": ["CI/CD", "DevOps"]
+    },
+    {
+      "id": 30,
+      "experienceLevel": 2,
+      "question": "What does Delivery mean when working with CI/CD?",
+      "correctAnswers": ["creating an artifact and making it available for deployment", "preparing code for deployment", "automated build and test to create deployable artifact"],
+      "type": "ai-agent",
+      "tags": ["CI/CD", "DevOps"]
+    },
+    {
+      "id": 31,
+      "experienceLevel": 2,
+      "question": "What does Deployment mean when working with CI/CD?",
+      "correctAnswers": ["publish the artifact created from delivery", "automatically releasing to production", "deploying the artifact to environment"],
+      "type": "ai-agent",
+      "tags": ["CI/CD", "DevOps"]
+    },
+    {
+      "id": 32,
+      "experienceLevel": 2,
+      "question": "What is in a delivery pipeline?",
+      "correctAnswers": ["Build, Test, Release", "Build", "Test", "Release"],
+      "type": "multiple",
+      "tags": ["CI/CD", "DevOps"]
+    },
+    {
+      "id": 33,
+      "experienceLevel": 2,
+      "question": "What is in a feedback loop from the delivery pipeline?",
+      "correctAnswers": ["Monitor, Planning", "Monitor", "Planning"],
+      "type": "multiple",
+      "tags": ["CI/CD", "DevOps"]
+    },
+    {
+      "id": 34,
+      "experienceLevel": 1,
+      "question": "What keyword is used to declare a variable in C#?",
+      "correctAnswers": ["var", "int", "string", "bool"],
+      "type": "regex",
+      "tags": ["C#", ".NET", "Backend"]
+    },
+    {
+      "id": 35,
+      "experienceLevel": 1,
+      "question": "What is the file extension for C# files?",
+      "correctAnswers": [".cs", "cs"],
+      "type": "regex",
+      "tags": ["C#", ".NET", "Backend"]
+    },
+    {
+      "id": 36,
+      "experienceLevel": 2,
+      "question": "What keyword is used for inheritance in C#?",
+      "correctAnswers": [":", "colon"],
+      "type": "regex",
+      "tags": ["C#", ".NET", "Backend"]
+    },
+    {
+      "id": 37,
+      "experienceLevel": 2,
+      "question": "What are access modifiers in C#?",
+      "correctAnswers": ["public", "private", "protected", "internal"],
+      "type": "multiple",
+      "tags": ["C#", ".NET", "Backend"]
+    },
+    {
+      "id": 38,
+      "experienceLevel": 1,
+      "question": "What does async keyword do in C#?",
+      "correctAnswers": ["async", "asynchronous"],
+      "type": "regex",
+      "tags": ["C#", ".NET", "Backend"]
+    },
+    {
+      "id": 39,
+      "experienceLevel": 3,
+      "question": "What is LINQ in C#?",
+      "correctAnswers": ["Language Integrated Query", "Language-Integrated Query"],
+      "type": "regex",
+      "tags": ["C#", ".NET", "Backend"]
+    },
+    {
+      "id": 40,
+      "experienceLevel": 2,
+      "question": "What is NuGet?",
+      "correctAnswers": ["package manager", "package manager for .NET"],
+      "type": "regex",
+      "tags": [".NET", "Backend"]
+    },
+    {
+      "id": 41,
+      "experienceLevel": 1,
+      "question": "What command lists files in current directory?",
+      "correctAnswers": ["ls", "dir"],
+      "type": "regex",
+      "tags": ["CLI", "Backend"]
+    },
+    {
+      "id": 42,
+      "experienceLevel": 1,
+      "question": "What command creates a new directory?",
+      "correctAnswers": ["mkdir", "md"],
+      "type": "regex",
+      "tags": ["CLI", "Backend"]
+    },
+    {
+      "id": 43,
+      "experienceLevel": 1,
+      "question": "What command removes a file?",
+      "correctAnswers": ["rm", "del"],
+      "type": "regex",
+      "tags": ["CLI", "Backend"]
+    },
+    {
+      "id": 44,
+      "experienceLevel": 2,
+      "question": "What command shows current directory path?",
+      "correctAnswers": ["pwd", "cd"],
+      "type": "regex",
+      "tags": ["CLI", "Backend"]
+    },
+    {
+      "id": 45,
+      "experienceLevel": 1,
+      "question": "What git command shows the commit history?",
+      "correctAnswers": ["git log"],
+      "type": "regex",
+      "tags": ["Git", "DevOps", "CLI"]
+    },
+    {
+      "id": 46,
+      "experienceLevel": 1,
+      "question": "What git command initializes a new repository?",
+      "correctAnswers": ["git init"],
+      "type": "regex",
+      "tags": ["Git", "DevOps", "CLI"]
+    },
+    {
+      "id": 47,
+      "experienceLevel": 2,
+      "question": "What git command creates a new branch?",
+      "correctAnswers": ["git branch", "git checkout -b"],
+      "type": "regex",
+      "tags": ["Git", "DevOps", "CLI"]
+    },
+    {
+      "id": 48,
+      "experienceLevel": 2,
+      "question": "What git command merges branches?",
+      "correctAnswers": ["git merge"],
+      "type": "regex",
+      "tags": ["Git", "DevOps", "CLI"]
+    },
+    {
+      "id": 49,
+      "experienceLevel": 1,
+      "question": "What git command clones a repository?",
+      "correctAnswers": ["git clone"],
+      "type": "regex",
+      "tags": ["Git", "DevOps", "CLI"]
+    },
+    {
+      "id": 50,
+      "experienceLevel": 3,
+      "question": "What git command shows uncommitted changes?",
+      "correctAnswers": ["git diff"],
+      "type": "regex",
+      "tags": ["Git", "DevOps", "CLI"]
+    },
+    {
+      "id": 51,
+      "experienceLevel": 2,
+      "question": "What are common HTTP methods?",
+      "correctAnswers": ["GET", "POST", "PUT", "DELETE", "PATCH"],
+      "type": "multiple",
+      "tags": ["Backend", "HTTP"]
+    },
+    {
+      "id": 52,
+      "experienceLevel": 1,
+      "question": "What HTTP status code means success?",
+      "correctAnswers": ["200", "200 OK"],
+      "type": "regex",
+      "tags": ["Backend", "HTTP"]
+    },
+    {
+      "id": 53,
+      "experienceLevel": 1,
+      "question": "What HTTP status code means not found?",
+      "correctAnswers": ["404"],
+      "type": "regex",
+      "tags": ["Backend", "HTTP"]
+    },
+    {
+      "id": 54,
+      "experienceLevel": 2,
+      "question": "What HTTP status code means server error?",
+      "correctAnswers": ["500", "500 Internal Server Error"],
+      "type": "regex",
+      "tags": ["Backend", "HTTP"]
+    },
+    {
+      "id": 55,
+      "experienceLevel": 2,
+      "question": "What HTTP status code means unauthorized?",
+      "correctAnswers": ["401"],
+      "type": "regex",
+      "tags": ["Backend", "HTTP"]
+    },
+    {
+      "id": 56,
+      "experienceLevel": 1,
+      "question": "What does API stand for?",
+      "correctAnswers": ["Application Programming Interface"],
+      "type": "regex",
+      "tags": ["Backend"]
+    },
+    {
+      "id": 57,
+      "experienceLevel": 1,
+      "question": "What does REST stand for?",
+      "correctAnswers": ["Representational State Transfer"],
+      "type": "regex",
+      "tags": ["Backend"]
+    },
+    {
+      "id": 58,
+      "experienceLevel": 1,
+      "question": "What does JSON stand for?",
+      "correctAnswers": ["JavaScript Object Notation"],
+      "type": "regex",
+      "tags": ["Backend"]
+    },
+    {
+      "id": 59,
+      "experienceLevel": 1,
+      "question": "What does SQL stand for?",
+      "correctAnswers": ["Structured Query Language"],
+      "type": "regex",
+      "tags": ["Backend", "Database"]
+    },
+    {
+      "id": 60,
+      "experienceLevel": 2,
+      "question": "Name SQL database types",
+      "correctAnswers": ["MySQL", "PostgreSQL", "SQLite", "SQL Server", "Oracle"],
+      "type": "multiple",
+      "tags": ["Backend", "Database"]
+    },
+    {
+      "id": 61,
+      "experienceLevel": 2,
+      "question": "Name NoSQL database types",
+      "correctAnswers": ["MongoDB", "Redis", "Cassandra", "CouchDB"],
+      "type": "multiple",
+      "tags": ["Backend", "Database"]
+    },
+    {
+      "id": 62,
+      "experienceLevel": 1,
+      "question": "What SQL command retrieves data?",
+      "correctAnswers": ["SELECT"],
+      "type": "regex",
+      "tags": ["Backend", "Database"]
+    },
+    {
+      "id": 63,
+      "experienceLevel": 1,
+      "question": "What SQL command inserts data?",
+      "correctAnswers": ["INSERT", "INSERT INTO"],
+      "type": "regex",
+      "tags": ["Backend", "Database"]
+    },
+    {
+      "id": 64,
+      "experienceLevel": 1,
+      "question": "What SQL command updates data?",
+      "correctAnswers": ["UPDATE"],
+      "type": "regex",
+      "tags": ["Backend", "Database"]
+    },
+    {
+      "id": 65,
+      "experienceLevel": 1,
+      "question": "What SQL command deletes data?",
+      "correctAnswers": ["DELETE"],
+      "type": "regex",
+      "tags": ["Backend", "Database"]
+    },
+    {
+      "id": 66,
+      "experienceLevel": 3,
+      "question": "What does CRUD stand for?",
+      "correctAnswers": ["Create, Read, Update, Delete"],
+      "type": "regex",
+      "tags": ["Backend", "Database"]
+    },
+    {
+      "id": 67,
+      "experienceLevel": 2,
+      "question": "Name common testing frameworks",
+      "correctAnswers": ["xUnit", "NUnit", "MSTest", "Jest", "Mocha", "PyTest"],
+      "type": "multiple",
+      "tags": ["Testing", "Backend"]
+    },
+    {
+      "id": 68,
+      "experienceLevel": 1,
+      "question": "What does TDD stand for?",
+      "correctAnswers": ["Test Driven Development", "Test-Driven Development"],
+      "type": "regex",
+      "tags": ["Testing", "DevOps"]
+    },
+    {
+      "id": 69,
+      "experienceLevel": 3,
+      "question": "What is mocking in testing?",
+      "correctAnswers": ["mock", "mocking", "simulating dependencies"],
+      "type": "regex",
+      "tags": ["Testing", "Backend"]
+    },
+    {
+      "id": 70,
+      "experienceLevel": 2,
+      "question": "Name CI/CD platforms",
+      "correctAnswers": ["GitHub Actions", "Jenkins", "GitLab CI", "CircleCI", "Travis CI"],
+      "type": "multiple",
+      "tags": ["CI/CD", "DevOps"]
+    },
+    {
+      "id": 71,
+      "experienceLevel": 2,
+      "question": "What is Docker?",
+      "correctAnswers": ["containerization platform", "container platform"],
+      "type": "regex",
+      "tags": ["DevOps", "Backend"]
+    },
+    {
+      "id": 72,
+      "experienceLevel": 3,
+      "question": "What is Kubernetes?",
+      "correctAnswers": ["container orchestration", "orchestration platform"],
+      "type": "regex",
+      "tags": ["DevOps", "Backend"]
+    },
+    {
+      "id": 73,
+      "experienceLevel": 1,
+      "question": "What does HTML stand for?",
+      "correctAnswers": ["HyperText Markup Language"],
+      "type": "regex",
+      "tags": ["Frontend"]
+    },
+    {
+      "id": 74,
+      "experienceLevel": 1,
+      "question": "What does CSS stand for?",
+      "correctAnswers": ["Cascading Style Sheets"],
+      "type": "regex",
+      "tags": ["Frontend"]
+    },
+    {
+      "id": 75,
+      "experienceLevel": 2,
+      "question": "Name popular frontend frameworks",
+      "correctAnswers": ["React", "Vue", "Angular", "Svelte"],
+      "type": "multiple",
+      "tags": ["Frontend"]
+    }
+  ]
+}
